@@ -351,4 +351,19 @@ supportedAbis[8]:       29:armeabi-v7a
 supportedVersionIds[0]: 26
 supportedVersionIds[1]: 27
 supportedVersionIds[2]: 28
-supportedVersionIds[3]: 29`
+supportedVersionIds[3]: 29
+---
+brand:                  Google
+codename:               Pixel2_Q
+form:                   VIRTUAL
+formFactor:             PHONE
+id:                     Pixel2_Q
+manufacturer:           Google
+name:                   Pixel 2 for Android Q
+screenDensity:          441
+screenX:                1080
+screenY:                1920
+supportedAbis[0]:       x86
+supportedAbis[7]:       29:armeabi
+supportedAbis[8]:       29:armeabi-v7a
+supportedVersionIds[0]: 29`
