@@ -63,6 +63,7 @@ inputs:
         │ NexusLowRes       │ Generic  │ Low-resolution MDPI phone           │  640 x 360  │ 23,24,25,26,27,28,29 │      │
         │ Pixel2            │ Google   │ Pixel 2                             │ 1920 x 1080 │ 26,27,28,29          │      │
         │ Pixel2_Q          │ Google   │ Pixel 2 for Android Q               │ 1920 x 1080 │ 29                   │      │
+        │ flame             │ Google   │ Pixel 4                             │ 2280 x 1080 │ 29, 30               │      │
         └───────────────────┴──────────┴─────────────────────────────────────┴─────────────┴──────────────────────┴──────┘
         ```
       summary: |
