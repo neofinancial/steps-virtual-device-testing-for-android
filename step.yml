@@ -1,7 +1,7 @@
-title: "[BETA] Virtual Device Testing for Android"
-summary: Run Android UI tests on virtual devices
+title: "[BETA] Device Testing for Android"
+summary: Run Android UI tests on Firebase Test Lab devices
 description: |-
-  Run Android UI tests on virtual devices. Available test types are instrumentation, robo, gameloop.
+  Run Android UI tests on Firebase Test Lab devices. Available test types are instrumentation, robo, gameloop.
   The minimal setup of this step would be to select test type. If you selected instrumentation, don't forget to set __Test APK path__
   under the __Instrumentation Test__ group as well.
 website: https://github.com/bitrise-steplib/steps-virtual-device-testing-for-android

@@ -34,7 +34,7 @@ func TestDeviceList(t *testing.T) {
 }
 
 func checkDeviceList() error {
-	cmd := command.New("gcloud", "firebase", "test", "android", "models", "list", "--format", "text", "--filter=VIRTUAL")
+	cmd := command.New("gcloud", "firebase", "test", "android", "models", "list", "--format", "text")
 	out, err := cmd.RunAndReturnTrimmedCombinedOutput()
 	if err != nil {
 		return errors.Wrap(err, out)
@@ -44,7 +44,7 @@ func checkDeviceList() error {
 		return nil
 	}
 
-	cmd = command.New("gcloud", "firebase", "test", "android", "models", "list", "--filter=VIRTUAL")
+	cmd = command.New("gcloud", "firebase", "test", "android", "models", "list")
 	outFormatted, err := cmd.RunAndReturnTrimmedCombinedOutput()
 	if err != nil {
 		return errors.Wrap(err, out)
