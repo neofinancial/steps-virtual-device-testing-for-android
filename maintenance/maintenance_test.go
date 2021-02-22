@@ -364,6 +364,6 @@ screenDensity:          441
 screenX:                1080
 screenY:                1920
 supportedAbis[0]:       x86
-supportedAbis[7]:       29:armeabi
-supportedAbis[8]:       29:armeabi-v7a
+supportedAbis[1]:       29:armeabi
+supportedAbis[2]:       29:armeabi-v7a
 supportedVersionIds[0]: 29`
