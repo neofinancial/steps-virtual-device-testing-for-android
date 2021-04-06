@@ -37,6 +37,7 @@ type ConfigsModel struct {
 	// shared debug
 	TestTimeout           float64 `env:"test_timeout,range]0..3600]"`
 	FlakyTestAttempts     int     `env:"num_flaky_test_attempts,range[0..10]"`
+	NumUniformShards     int     `env:"num_uniform_shards,range[0..500]"`
 	DownloadTestResults   bool    `env:"download_test_results,opt[true,false]"`
 	DirectoriesToPullList string  `env:"directories_to_pull"`
 	DirectoriesToPull     []string
@@ -75,6 +76,7 @@ func (configs *ConfigsModel) print() {
 	}
 	log.Printf("- TestTimeout: %f", configs.TestTimeout)
 	log.Printf("- FlakyTestAttempts: %d", configs.FlakyTestAttempts)
+	log.Printf("- NumUniformShards: %d", configs.NumUniformShards)
 	log.Printf("- DownloadTestResults: %t", configs.DownloadTestResults)
 	log.Printf("- DirectoriesToPull: %s", configs.DirectoriesToPullList)
 	log.Printf("- AutoGoogleLogin: %t", configs.AutoGoogleLogin)

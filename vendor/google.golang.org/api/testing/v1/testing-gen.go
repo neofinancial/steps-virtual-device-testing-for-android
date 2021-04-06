@@ -2490,6 +2490,17 @@ type TestMatrix struct {
 	// Default is 0, which implies no reruns.
 	FlakyTestAttempts int64 `json:"flakyTestAttempts,omitempty"`
 
+
+	// NumUniformShards: Specifies the number of shards into which you want to 
+	// evenly distribute test cases. The shards are run in parallel on 
+	// separate devices. For example, if your test execution contains 20 test 
+	// cases and you specify four shards, each shard executes five test cases.
+	// The number of shards should be less than the total number of test cases.
+	// The number of shards specified must be >= 1 and <= 500.
+	//
+	// Default is 0, which implies no shards.
+	NumUniformShards int64 `json:"numUniformShards,omitempty"`
+
 	// InvalidMatrixDetails: Output only. Describes why the matrix is
 	// considered invalid.
 	// Only useful for matrices in the INVALID state.

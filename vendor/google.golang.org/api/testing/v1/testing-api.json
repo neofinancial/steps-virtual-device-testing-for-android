@@ -1546,6 +1546,11 @@
           "format": "int32",
           "type": "integer"
         },
+        "numUniformShards": {
+          "description": "Specifies the number of shards into which you want to evenly distribute test cases. The shards are run in parallel on separate devices. For example, if your test execution contains 20 test cases and you specify four shards, each shard executes five test cases.\nThe number of shards should be less than the total number of test cases.\nThe number of shards specified must be >= 1 and <= 500.",
+          "format": "int32",
+          "type": "integer"
+        },
         "invalidMatrixDetails": {
           "description": "Output only. Describes why the matrix is considered invalid.\nOnly useful for matrices in the INVALID state.",
           "enum": [
